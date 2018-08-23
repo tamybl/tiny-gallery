@@ -1,0 +1,60 @@
+body {
+    background-image: linear-gradient(to right, #eee8b4c7 0%, #ffdc7dc7 100%);
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, #c71d6f 0%, #d09693 100%);
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.container img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.container .show-img img {
+    max-height: 330px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container .thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.container .thumbnails img {
+    height: 20vw;
+    width: 30vw;
+    max-height: 100px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn .5s ease-in 1 forwards;
+    -webkit-animation: fadeIn .5s ease-in 1 forwards;
+}
+
+
+
